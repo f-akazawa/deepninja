@@ -1,4 +1,5 @@
-deepninja
+DeepNINJA HomePage
 =========
 
-deepninja HomePage for twitterBootstrap3
+deepninja HomePage for twitterBoostrap3
+今後の更新は無し
