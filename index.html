@@ -1,214 +1,893 @@
-<!DOCTYPE html>
-<html>
+﻿<!DOCTYPE html>
+<html lang="ja">
 <head>
-  <title>S1-INBOX</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Bootstrap -->
-  <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-  <link rel="stylesheet" href="css/style.css" />
+	<meta charset="utf-8">
+	<meta name="viewport"    content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Deep NINJA Promotion Page ">
+	<meta name="author"      content="Japan Agency for Marine-Earth Science and Technology (JAMSTEC)">
 	
-  <!-- Font-Awesome -->
-  <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet">
-  <!-- Web Font -->
-  <link href='http://fonts.googleapis.com/css?family=Balthazar' rel='stylesheet' type='text/css'>	
+	<title>Deep NINJA</title>
 
-  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-  <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-  <![endif]-->
+	<!-- <link rel="shortcut icon" href="assets/images/gt_favicon.png">  -->
+	
+	<!-- Bootstrap itself -->
+	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+	<!-- Custom styles -->
+	<link rel="stylesheet" href="assets/css/magister.css">
+
+	<!-- Fonts -->
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href='http://fonts.googleapis.com/css?family=Wire+One' rel='stylesheet' type='text/css'>
 </head>
-<body>
-  
-	<div id="header">
-		<!-- /logo -->
-		
-		<nav class="navbar navbar-default" role="navigation">
-		  <div class="container">
-		  <!-- Brand and toggle get grouped for better mobile display -->
-		  	<div class="navbar-header">
-		  	  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-		  	    <span class="sr-only">Toggle navigation</span>
-		  	    <span class="icon-bar"></span>
-		  	    <span class="icon-bar"></span>
-		  	    <span class="icon-bar"></span>
-		  	  </button>
-		  	  <span class="navbar-brand visible-xs" href="#">Menu</span>
-		  	</div>
-		  			
-		  	<!-- Collect the nav links, forms, and other content for toggling -->
-		  	<div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1">
-		  	  <ul class="nav navbar-nav">
-		  	    <li class="first"><a href="#">Top</a></li>
-		  	    <li><a href="#">Map</a></li>
-		  	    <li><a href="#">Inventory</a></li>
-		  	    <li><a href="traj.html">Trajectory</a></li>
-		  	    <li><a href="2000db.html">Time</a></li>
-		  	    <li><a href="raw.html">RawData</a></li>
-		  	  </ul>
-		  	</div><!-- /.navbar-collapse -->
-		  </div>
-		</nav>
-		<!-- /nav -->
-		
-	</div>
-	<!-- /header -->
-  
-    <!-- Carousel
-    ================================================== -->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="item active">
-          <img src="img/slide-1.jpg" alt="slide-1">
-          <div class="container">
-            <div class="carousel-caption">
-              <p>caption caption the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img src="img/slide-2.jpg" alt="slide-2">
-          <div class="container">
-            <div class="carousel-caption">
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img src="img/slide-3.jpg" alt="slide-3">
-          <div class="container">
-            <div class="carousel-caption">
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-      <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
-    </div><!-- /.carousel -->
 
-  
-  
-	<div id="content">
-	  <div class="container">
-	  	
-	  	<h2 class="title">Project Introduction</h2>
-	  	<!-- /title -->
-	  	
-	  	<div class="row">
-	  		<div class="text-box col-sm-6">
-	  			  	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, libero, quaerat, doloremque pariatur amet minima nihil enim temporibus doloribus dolorem neque sit quo id voluptas voluptate praesentium magnam? Unde, provident.sunt esse dolores dolorum deleniti asperiores commodi beatae ad veritatis voluptates dignissimos. Possimus!sunt esse dolores dolorum deleniti asperiores commodi beatae ad veritatis voluptates dignissimos. Possimus!
-	  		</div>
-	  		<div class="text-box col-sm-6">
-	  			  	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, iste, nesciunt, sapiente incidunt consequatur placeat voluptate sequi sunt esse dolores dolorum deleniti asperiores commodi beatae ad veritatis voluptates dignissimos. Possimus!sunt esse dolores dolorum deleniti asperiores commodi beatae ad veritatis voluptates dignissimos. Possimus!sunt esse dolores dolorum deleniti asperiores commodi beatae ad veritatis voluptates dignissimos. Possimus!
-	  		</div>
-	  	</div>
-	  	<!-- /text-box -->
-	  	
-	  	<div class="row">
-		  	<div class="col-sm-3">
-		  		<div class="panel panel-default">
-						<div class="panel-body">
-							Photo
-						</div>
-						<div class="panel-footer">Float Map</div>
-					</div>
-		  	</div>
-		  	<div class="col-sm-3">
-		  		<div class="panel panel-default">
-						<div class="panel-body">
-							Photo
-						</div>
-						<div class="panel-footer">Float Inventory</div>
-					</div>
-		  	</div>
-		  	<div class="col-sm-3">
-		  		<div class="panel panel-default">
-						<div class="panel-body">
-                                                  <a href="traj.html" class="thumbnail img-responsive"><img src="img/traj/traj_2902431.png"></a>
-						</div>
-						  <a href="traj.html"><div class="panel-footer">Float Trajectory</div></a>
-					</div>
-		  	</div>
-		  	<div class="col-sm-3">
-		  		<div class="panel panel-default">
-						<div class="panel-body">
-					          <a href="2000db.html" class="thumbnail img-responsive"><img src="img/2000db/2000db_thumbnail.png"></a>
-						</div>
-						  <a href="2000db.html"><div class="panel-footer">Cross-section</div></a>
-					</div>
-		  	</div>
-	  	</div>
-                <div class="row">
-		  	<div class="col-sm-12">
-<!--		  		<div class="panel panel-default">
-						<div class="panel-body">
-							Photo
-						</div>
--->
-						<a href="raw.html"><div class="panel panel-footer">Raw Data</div></a>
-					</div>
-		  	</div>
-<!--
-		  	<div class="col-sm-6">
-		  		<div class="panel panel-default">
-						<div class="panel-body">
-							Photo
-						</div>
-						<div class="panel-footer">Raw Data Info</div>
-					</div>
-		  	</div>
--->
-                </div>
-	  	<!-- /panel-box -->
-	  	
-	  </div>
-	  <!-- /container -->
-	  
-	  <!-- /button-box -->
-	  
-	</div>
-	<!-- /content -->
-  
-<div id="footer">
-  
-  <!-- /footer-logo -->
-  
-  <ul class="navbar-nav list-inline">
-  	<li class="first"><a href="">Top</a></li>
-  	<li><a href="">Map</a></li>
-  	<li><a href="">Inventory</a></li>
-  	<li><a href="traj.html">Trajectory</a></li>
-  	<li><a href="2000db.html">Time</a></li>
-        <li><a href="raw.html">RawData</a></li>
-  </ul>
-  <!-- /nav -->
-  
-  <div class="clearfix"></div>
-  <!--
-  <ul class="sns-icon list-inline">
-  	<li><i class="fa fa-twitter fa-2x"></i></li>
-  	<li><i class="fa fa-facebook fa-2x"></i></li>
-  </ul>-->
-  <!-- /sns-icon -->
-  
-  <div class="copy">
-	  <span>Copyright &copy; 2014 JAMSTEC All Rights Reserved.</span>
-  </div>
-  <!-- /copy -->
-  
-</div>
+<!-- use "theme-invert" class on bright backgrounds, also try "text-shadows" class -->
+<body class="theme-invert">
 
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="https://code.jquery.com/jquery.js"></script>
-  <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <script src="js/bootstrap.min.js"></script>
+<nav class="mainmenu">
+	<div class="container">
+		<div class="dropdown">
+			<button type="button" class="navbar-toggle" data-toggle="dropdown"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+			<!-- <a data-toggle="dropdown" href="#">Dropdown trigger</a> -->
+			<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+				<li><a href="#head" class="active"><font color="#FFA500">Top</font></a></li>
+				<li><a href="#about"><font color="#FFA500">Project Abstract</font></a></li>
+				<li><a href="#inventory"><font color="#FFA500">Inventory</font></a></li>
+				<li><a href="#trajectory"><font color="#FFA500">Trajectory</font></a></li>
+				<li><a href="#timecross"><font color="#FFA500">Profile</font></a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+
+<!-- Main (Home) section -->
+<section class="section" id="head">
+	<div class="container">
+
+		<div class="row">
+			<div class="col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1 text-center">	
+
+				<!-- Site Title, HELLO msg, etc. -->
+				<h1 class="title">Deep NINJA</h1>
+				<h2 class="subtitle">can observe the deep ocean up to 4,000 m depth automatically and globally.</h2>
+
+				<!-- Short introductory (optional) -->
+				<h3 class="tagline">
+				It is the first deep float developed by JAMSTEC and Tsurumi-Seiki Co. Ltd.
+				</h3>
+				
+				<!-- Nice place to describe your site in a sentence or two -->
+				<p class="contents">&copy;Japan Agency for Marine-Earth Science and Technology (JAMSTEC) 2014</p>
+	
+			</div> <!-- /col -->
+		</div> <!-- /row -->
+	
+	</div>
+</section>
+
+<!-- Second (Abstract) section -->
+<section class="section" id="about">
+	<div class="container">
+	
+		<h2 class="text-center title">Project Abstract</h2>
+		<div class="row">
+			<div class="col-sm-4 col-sm-offset-2">    
+				<!-- <h5><strong>here's my lorem ipsum?<br></strong></h5> -->
+				<p class="contents">The importance of deep ocean observation has been gradually recognized to understand oceanic effects on the anthropogenic climate change accurately. A deep float is one of the most suitable devices to gather lots of oceanic profiles from deep ocean at reasonable cost, and a monitoring network with many deep floats, "deep Argo", is strongly required to be built up even from social viewpoints. However, there are no floats available below 2,000 m depth and a deep float is now being developed internationally. In Japan, Japan Agency for Marine-Earth Science and Technology (JAMSTEC) and Tsurumi-Seiki Co. Ltd. (TSK) began to develop a deep float in 2010, and finally we succeeded to realize a deep float, "Deep NINJA" in April 2013. Deep NINJA can observe the deep ocean up to 4,000 m depth globally except for the throughout-a-year ice covered seas. Figure1 shows the schematic view of Deep NINJA operation in the ocean in comparison with the normal (Argo) float.Until now, JAMSTEC has deployed totally 14 floats of Deep NINJA (including 2 prototypes) mainly into the Southern Ocean in corporation with TSK. The floats operated well and have observed more than 150 oceanic profiles (as of the end of April 2014). Especially, one Deep NINJA float deployed off the Adelie Coast, the Antarctica, succeeded to measure the deep profiles under sea ice throughout an Antarctic winter and has observed seasonal changes of the deep/bottom waters in the Antarctic Ocean for more than one year.</p>    
+			</div>
+			<div class="col-sm-4">
+				<p class="contents">As the Deep NINJA floats are operated under Japan Argo, their observations must be available for the public via Global Data Archive Center (GDAC) in the manner of Argo. However, the CTD sensor on the current deep floats (including Deep NINJA) was developed originally for "Argo floats," which work in the shallower ocean than the 2000m depth, and thus its features under high pressure in the deep ocean were not examined enough. JAMSTEC has also clarified that its salinity measurements showed a bias which probably depends on pressure. Argo Steering Team is concerned very much that such deep float data are released in the Argo manner, that is, "publically, freely, and near real-timely via the Internet," and now they are discussing the protocol for the release of the deep float data.The website is made to introduce the Deep NINJA itself and to introduce the inventory of the Deep NINJA data. JAMSTEC will provide the Deep NINJA data for anyone who wants to use them. If so, please contact with the following e-mail address. Note that the data will be changed without announcements and that JAMSTEC takes no responsibility for any problem/trouble that occurred for the use in case.</p>    
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-8 col-sm-offset-2"><div class="thumbnail"><h5><strong>Schematic comparison between present Argo float and Deep NINJA observations.(Figure1)</strong></h5><img src="assets/images/operation.jpg"></div></div>
+			<div class="col-sm-4 col-sm-offset-2"><div class="thumbnail"><h5><strong>Deep NINJA</br> (photo credit: Tsurumi-Seiki Co. Ltd.)</strong></h5><img src="assets/images/DeepNINJABody.jpg"></div></div>
+			<div class="col-sm-4">
+				<p class="contents">
+					<ul>
+						<li><font color="#FFFFFF" class="tagline"><strong>Specifications of Deep NINJA</strong></font></li>
+						<li><font color="#FFFFFF"><strong>Maximum depth for operation:</strong>4000 m</font></li>
+						<li><font color="#FFFFFF"><strong>Size:</strong>210cm and 50kg</font></li>
+						<li><font color="#FFFFFF"><strong>Sensor:</strong>SBE41CP for deep float (Sea-Bird Electronics, US)</font></li>
+						<li><font color="#FFFFFF"><strong>Transmission:</strong>Iridium, Short Burst Data Service (two-way)</font></li>
+						<li><font color="#FFFFFF"><strong>Positioning:</strong>by Global Positioning System</font></li>
+						<li><font color="#FFFFFF"><strong>Lifetime:</strong>More than one year by Lithium batteries</font></li>
+					</ul>
+				</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-8 col-sm-offset-2"><div class="thumbnail"><h5><strong>Deployment of the first Deep NINJA from R/V Wakataka-maru in August 2012.</br>(photo credit: Tohoku National Fisheries Research Institute, Japan)</strong></h5><img src="assets/images/1.jpg"></div></div>
+			<div class="col-sm-8 col-sm-offset-2"><div class="thumbnail"><h5><strong>Deployment of Deep NINJA off the Adelie Coast, Antarctica from R/V Mirai in December 2012.</strong></h5><img src="assets/images/2.jpg"></div></div>
+		</div>
+	</div>
+</section>
+
+<!-- Third (Inventory) section -->
+<section class="section" id="inventory">
+	<div class="container">
+	
+		<h2 class="text-center title">Inventory Data</h2>
+		<div class="row">
+			<div class="col-sm-12 col-sm-offset-1 text-center">
+<table class="contents" border="1">
+	<thead>
+		<tr>
+			<th rowspan="2">
+				Serial No.
+			</th>
+			<th rowspan="2">
+				Date for deployment
+			</th>
+			<th rowspan="2">
+				Area for deployment
+			</th>
+			<th rowspan="2">
+				Position for deployment
+			</th>
+			<th rowspan="2">
+				Deploy ship name
+			</th>
+			<th>
+				Cycle
+			</th>
+			<th>
+				Parking depth
+			</th>
+			<th>
+				Profile depth(s)
+			</th>
+			<th>
+				Number of profiles
+			</th>
+			<th rowspan="2">
+				Status
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td></td><td></td><td></td><td></td><td></td>
+			<td>
+				(day)
+			</td>
+			<td>
+				(dbar)
+			</td>
+			<td>
+				(dbar)
+			</td>
+			<td>
+				(that of deep profiles)
+			</td>
+		</tr>
+		<tr>
+			<th>
+				1
+			</th>
+			<td>
+				2012/8/29
+			</td>
+			<td>
+				Subarctic, North Pacific
+			</td>
+			<td>
+				40° 40.00 N, 144°46.18 E
+			</td>
+			<td>
+				Wakataka-maru WK1208
+			</td>
+			<td>
+				5
+			</td>
+			<td>
+				1000
+			</td>
+			<td>
+				4000
+			</td>
+			<td>
+				1 (1)
+			</td>
+			<td>
+				Dead (failure at communication unit?)
+			</td>
+		</tr>
+		<tr>
+			<th>
+				2
+			</th>
+			<td>
+				2012/8/29
+			</td>
+			<td>
+				Subarctic, North Pacific
+			</td>
+			<td>
+				40° 40.00 N, 144°46.18 E
+			</td>
+			<td>
+				Wakataka-maru WK1209
+			</td>
+			<td>
+				10
+			</td>
+			<td>
+				1000
+			</td>
+			<td>
+				2000/4000
+			</td>
+			<td>
+				21 (16)
+			</td>
+			<td>
+				Dead (Energy consumption?)
+			</td>
+		</tr>
+		<tr>
+			<th>
+				3
+			</th>
+			<td>
+				2012/12/19
+			</td>
+			<td>
+				Off the Adelie Coast, Anatrctica
+			</td>
+			<td>
+				60° 00.62 S, 139°56.12 E
+			</td>
+			<td>
+				Mirai MR12-05
+			</td>
+			<td>
+				15
+			</td>
+			<td>
+				2000
+			</td>
+			<td>
+				4000
+			</td>
+			<td>
+				15 (9)
+			</td>
+			<td>
+				Dead (Unknown)
+			</td>
+		</tr>
+		<tr>
+			<th>
+				4
+			</th>
+			<td>
+				2012/12/5
+			</td>
+			<td>
+				South of NZ, Southern Ocean
+			</td>
+			<td>
+				56° 59.87 S, 173°59.31 E
+			</td>
+			<td>
+				Mirai MR12-06
+			</td>
+			<td>
+				15
+			</td>
+			<td>
+				2000
+			</td>
+			<td>
+				2000/4000
+			</td>
+			<td>
+				37 (18)
+			</td>
+			<td>
+				Active
+			</td>
+		</tr>
+		<tr>
+			<th>
+				5
+			</th>
+			<td>
+				2012/12/17
+			</td>
+			<td>
+				Off the Adelie Coast, Anatrctica
+			</td>
+			<td>
+				62° 00.38 S, 137°00.42 E
+			</td>
+			<td>
+				Mirai MR12-07
+			</td>
+			<td>
+				30
+			</td>
+			<td>
+				2000
+			</td>
+			<td>
+				4000
+			</td>
+			<td>
+				14 (10)
+			</td>
+			<td>
+				Dead (accident at sea ice?)
+			</td>
+		</tr>
+		<tr>
+			<th>
+				6
+			</th>
+			<td>
+				2012/12/16
+			</td>
+			<td>
+				Off the Adelie Coast, Anatrctica
+			</td>
+			<td>
+				62° 45.73 S, 143°36.05 E
+			</td>
+			<td>
+				Mirai MR12-08
+			</td>
+			<td>
+				30
+			</td>
+			<td>
+				2000
+			</td>
+			<td>
+				4000
+			</td>
+			<td>
+				22 (18)
+			</td>
+			<td>
+				Active
+			</td>
+		</tr>
+		<tr>
+			<th>
+				7
+			</th>
+			<td>
+				2013/7/17
+			</td>
+			<td>
+				Subtropcal, North Pacific
+			</td>
+			<td>
+				30° 03.91 N, 144°58.09 E
+			</td>
+			<td>
+				Mirai MR13-04
+			</td>
+			<td>
+				10
+			</td>
+			<td>
+				3000
+			</td>
+			<td>
+				4000
+			</td>
+			<td>
+				28 (28)
+			</td>
+			<td>
+				Active
+			</td>
+		</tr>
+		<tr>
+			<th>
+				8
+			</th>
+			<td>
+				2014/3/6
+			</td>
+			<td>
+				Off the Adelie Coast, Anatrctica
+			</td>
+			<td>
+				60° 40.55 S, 148°35.65 E
+			</td>
+			<td>
+				Shirase JARE55
+			</td>
+			<td>
+				20
+			</td>
+			<td>
+				3000
+			</td>
+			<td>
+				4000
+			</td>
+			<td>
+				3 (3)
+			</td>
+			<td>
+				Active
+			</td>
+		</tr>
+		<tr>
+			<th>
+				9
+			</th>
+			<td>
+				2014/3/7
+			</td>
+			<td>
+				Off the Adelie Coast, Anatrctica
+			</td>
+			<td>
+				59° 14.34 S, 150°08.85 E
+			</td>
+			<td>
+				Shirase JARE56
+			</td>
+			<td>
+				20
+			</td>
+			<td>
+				2500
+			</td>
+			<td>
+				4000
+			</td>
+			<td>
+				3 (3)
+			</td>
+			<td>
+				Active
+			</td>
+		</tr>
+		<tr>
+			<th>
+				10
+			</th>
+			<td>
+				2014/1/23
+			</td>
+			<td>
+				Off the Budd Coast, Antarctica
+			</td>
+			<td>
+				62° 55.0659 S, 109°59.8474 E
+			</td>
+			<td>
+				Umitaka-maru UM041
+			</td>
+			<td>
+				20
+			</td>
+			<td>
+				2000
+			</td>
+			<td>
+				4000
+			</td>
+			<td>
+				0 (0)
+			</td>
+			<td>
+				Unknown
+			</td>
+		</tr>
+		<tr>
+			<th>
+				11
+			</th>
+			<td>
+				2014/1/19
+			</td>
+			<td>
+				Off the Budd Coast, Antarctica
+			</td>
+			<td>
+				60° 03.4988 S, 109°53.3204 E
+			</td>
+			<td>
+				Umitaka-maru UM042
+			</td>
+			<td>
+				20
+			</td>
+			<td>
+				3500
+			</td>
+			<td>
+				4000
+			</td>
+			<td>
+				6 (6)
+			</td>
+			<td>
+				Active
+			</td>
+		</tr>
+		<tr>
+			<th>
+				12
+			</th>
+			<td>
+				2014/1/22
+			</td>
+			<td>
+				Off the Budd Coast, Antarctica
+			</td>
+			<td>
+				62° 00.4176 S, 110°00.1893 E
+			</td>
+			<td>
+				Umitaka-maru UM043
+			</td>
+			<td>
+				20
+			</td>
+			<td>
+				3500
+			</td>
+			<td>
+				4000
+			</td>
+			<td>
+				5 (5)
+			</td>
+			<td>
+				Active
+			</td>
+		</tr>
+		<tr>
+			<th>
+				13
+			</th>
+			<td>
+				2014/1/27
+			</td>
+			<td>
+				Off the Budd Coast, Antarctica
+			</td>
+			<td>
+				64° 15.8987 S, 107°41.9985 E
+			</td>
+			<td>
+				Umitaka-maru UM044
+			</td>
+			<td>
+				20
+			</td>
+			<td>
+				3000
+			</td>
+			<td>
+				4000
+			</td>
+			<td>
+				5 (5)
+			</td>
+			<td>
+				Active
+			</td>
+		</tr>
+		<tr>
+			<th>
+				14
+			</th>
+			<td>
+				2014/1/24
+			</td>
+			<td>
+				Off the Budd Coast, Antarctica
+			</td>
+			<td>
+				64° 05.3637 S, 109°51.0107 E
+			</td>
+			<td>
+				Umitaka-maru UM045
+			</td>
+			<td>
+				20
+			</td>
+			<td>
+				3000
+			</td>
+			<td>
+				4000
+			</td>
+			<td>
+				6 (6)
+			</td>
+			<td>
+				Active
+			</td>
+		</tr>
+	</tbody>
+</table>
+			</div>
+		</div>
+
+	</div>
+</section>
+
+<!-- Fourth (Trajectory) section -->
+<section class="section" id="trajectory">
+	<div class="container">
+	
+		<h2 class="text-center title">Trajectory Map</h2>
+		<div class="row">
+			<div class="col-sm-8 col-sm-offset-2"><div class="thumbnail"><h5><strong>Deployment Map</strong></h5><img src="assets/images/map.jpg"></div>
+		</div>
+		<div class="row">
+			<div class="col-sm-4 col-sm-offset-2">
+				<div class="thumbnail">
+					<img src="assets/images/traj/01-map.jpg" alt="">
+					<div class="caption">
+						<h3>S/N01</h3>
+						<p><a href="assets/images/traj/01-map.jpg" download class="btn btn-primary" role="button">Download</a></p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="thumbnail">
+					<img src="assets/images/traj/02-map.jpg" alt="">
+					<div class="caption">
+						<h3>S/N02</h3>
+						<p><a href="assets/images/traj/02-map.jpg" download class="btn btn-primary" role="button">Download</a></p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4 col-sm-offset-2">
+				<div class="thumbnail">
+					<img src="assets/images/traj/03-map.jpg" alt="">
+					<div class="caption">
+						<h3>S/N03</h3>
+						<p><a href="assets/images/traj/03-map.jpg" download class="btn btn-primary" role="button">Download</a></p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="thumbnail">
+					<img src="assets/images/traj/04-map.jpg" alt="">
+					<div class="caption">
+						<h3>S/N04</h3>
+						<p><a href="assets/images/traj/04-map.jpg" download class="btn btn-primary" role="button">Download</a></p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4 col-sm-offset-2">
+				<div class="thumbnail">
+					<img src="assets/images/traj/05-map.jpg" alt="">
+					<div class="caption">
+						<h3>S/N05</h3>
+						<p><a href="assets/images/traj/05-map.jpg" download class="btn btn-primary" role="button">Download</a></p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="thumbnail">
+					<img src="assets/images/traj/06-map.jpg" alt="">
+					<div class="caption">
+						<h3>S/N06</h3>
+						<p><a href="assets/images/traj/06-map.jpg" download class="btn btn-primary" role="button">Download</a></p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4 col-sm-offset-2">
+				<div class="thumbnail">
+					<img src="assets/images/traj/07-map.jpg" alt="">
+					<div class="caption">
+						<h3>S/N07</h3>
+						<p><a href="assets/images/traj/07-map.jpg" download class="btn btn-primary" role="button">Download</a></p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="thumbnail">
+					<img src="assets/images/traj/08-map.jpg" alt="">
+					<div class="caption">
+						<h3>S/N08</h3>
+						<p><a href="assets/images/traj/07-map.jpg" download class="btn btn-primary" role="button">Download</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-4 col-sm-offset-2">
+				<div class="thumbnail">
+					<img src="assets/images/traj/09-map.jpg" alt="">
+					<div class="caption">
+						<h3>S/N09</h3>
+						<p><a href="assets/images/traj/09-map.jpg" download class="btn btn-primary" role="button">Download</a></p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="thumbnail">
+					<img src="assets/images/traj/11-map.jpg" alt="">
+					<div class="caption">
+						<h3>S/N11</h3>
+						<p><a href="assets/images/traj/11-map.jpg" download class="btn btn-primary" role="button">Download</a></p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4 col-sm-offset-2">
+				<div class="thumbnail">
+					<img src="assets/images/traj/12-map.jpg" alt="">
+					<div class="caption">
+						<h3>S/N12</h3>
+						<p><a href="assets/images/traj/12-map.jpg" download class="btn btn-primary" role="button">Download</a></p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="thumbnail">
+					<img src="assets/images/traj/13-map.jpg" alt="">
+					<div class="caption">
+						<h3>S/N13</h3>
+						<p><a href="assets/images/traj/13-map.jpg" download class="btn btn-primary" role="button">Download</a></p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4 col-sm-offset-2">
+				<div class="thumbnail">
+					<img src="assets/images/traj/14-map.jpg" alt="">
+					<div class="caption">
+						<h3>S/N14</h3>
+						<p><a href="assets/images/traj/14-map.jpg" download class="btn btn-primary" role="button">Download</a></p>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+
+	</div>
+</section>
+
+<!-- Fifth (Time-Profile) section -->
+<section class="section" id="timecross">
+	<div class="container">
+	
+		<h2 class="text-center title">Time-Depth Section</h2>
+		<div class="row">
+			<div class="col-sm-8 col-sm-offset-2">
+				<div class="thumbnail">
+					<img src="assets/images/time/01-time-profile.jpg" alt="">
+					<div class="caption">
+						<h3>S/N01</h3>
+						<p><a href="assets/images/time/01-time-profile.jpg" download class="btn btn-primary" role="button">Download</a></p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-8 col-sm-offset-2">
+				<div class="thumbnail">
+					<img src="assets/images/time/02-time-profile.jpg" alt="">
+					<div class="caption">
+						<h3>S/N02</h3>
+						<p><a href="assets/images/time/02-time-profile.jpg" download class="btn btn-primary" role="button">Download</a></p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-8 col-sm-offset-2">
+				<div class="thumbnail">
+					<img src="assets/images/time/03-time-profile.jpg" alt="">
+					<div class="caption">
+						<h3>S/N03</h3>
+						<p><a href="assets/images/time/03-time-profile.jpg" download class="btn btn-primary" role="button">Download</a></p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-8 col-sm-offset-2">
+				<div class="thumbnail">
+					<img src="assets/images/time/04-time-profile.jpg" alt="">
+					<div class="caption">
+						<h3>S/N04</h3>
+						<p><a href="assets/images/time/04-time-profile.jpg" download class="btn btn-primary" role="button">Download</a></p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-8 col-sm-offset-2">
+				<div class="thumbnail">
+					<img src="assets/images/time/05-time-profile.jpg" alt="">
+					<div class="caption">
+						<h3>S/N05</h3>
+						<p><a href="assets/images/time/05-time-profile.jpg" download class="btn btn-primary" role="button">Download</a></p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-8 col-sm-offset-2">
+				<div class="thumbnail">
+					<img src="assets/images/time/06-time-profile.jpg" alt="">
+					<div class="caption">
+						<h3>S/N06</h3>
+						<p><a href="assets/images/time/06-time-profile.jpg" download class="btn btn-primary" role="button">Download</a></p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-8 col-sm-offset-2">
+				<div class="thumbnail">
+					<img src="assets/images/time/07-time-profile.jpg" alt="">
+					<div class="caption">
+						<h3>S/N07</h3>
+						<p><a href="assets/images/time/07-time-profile.jpg" download class="btn btn-primary" role="button">Download</a></p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-8 col-sm-offset-2">
+				<div class="thumbnail">
+					<img src="assets/images/time/08-time-profile.jpg" alt="">
+					<div class="caption">
+						<h3>S/N08</h3>
+						<p><a href="assets/images/time/08-time-profile.jpg" download class="btn btn-primary" role="button">Download</a></p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-8 col-sm-offset-2">
+				<div class="thumbnail">
+					<img src="assets/images/time/09-time-profile.jpg" alt="">
+					<div class="caption">
+						<h3>S/N09</h3>
+						<p><a href="assets/images/time/09-time-profile.jpg" download class="btn btn-primary" role="button">Download</a></p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-8 col-sm-offset-2">
+				<div class="thumbnail">
+					<img src="assets/images/time/11-time-profile.jpg" alt="">
+					<div class="caption">
+						<h3>S/N11</h3>
+						<p><a href="assets/images/time/11-time-profile.jpg" download class="btn btn-primary" role="button">Download</a></p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-8 col-sm-offset-2">
+				<div class="thumbnail">
+					<img src="assets/images/time/12-time-profile.jpg" alt="">
+					<div class="caption">
+						<h3>S/N12</h3>
+						<p><a href="assets/images/time/12-time-profile.jpg" download class="btn btn-primary" role="button">Download</a></p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-8 col-sm-offset-2">
+				<div class="thumbnail">
+					<img src="assets/images/time/13-time-profile.jpg" alt="">
+					<div class="caption">
+						<h3>S/N13</h3>
+						<p><a href="assets/images/time/13-time-profile.jpg" download class="btn btn-primary" role="button">Download</a></p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-8 col-sm-offset-2">
+				<div class="thumbnail">
+					<img src="assets/images/time/14-time-profile.jpg" alt="">
+					<div class="caption">
+						<h3>S/N14</h3>
+						<p><a href="assets/images/time/14-time-profile.jpg" download class="btn btn-primary" role="button">Download</a></p>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+</section>
+
+
+<!-- Load js libs only when the page is loaded. -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+<script src="assets/js/modernizr.custom.72241.js"></script>
+<!-- Custom template scripts -->
+<script src="assets/js/magister.js"></script>
 </body>
 </html>
