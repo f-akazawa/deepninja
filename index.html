@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html lang="ja">
+<html>
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport"    content="width=device-width, initial-scale=1.0">
@@ -47,7 +47,24 @@
 
 </script>
 
-  </head>
+<?php
+
+$languages = explode(',', $_SERVER['HTTP_ACCEPT_LANGUAGE']);
+$languages = array_reverse($languages);
+
+$result = '';
+
+foreach ($languages as $language) {
+  if (preg_match('/^ja/i', $language)) {
+    $result = 'Japanese';
+  } elseif (preg_match('/^en/i', $language)) {
+    $result = 'English';
+  }
+}
+
+?>
+
+</head>
 
 <!-- use "theme-invert" class on bright backgrounds, also try "text-shadows" class -->
 <body class="theme-invert">
@@ -56,12 +73,23 @@
 	<div class="container">
 			<!-- <a data-toggle="dropdown" href="#">Dropdown trigger</a> -->
 			<ul role="menu" aria-labelledby="dLabel">
-				<li><a href="#head" class="active"><font color="#FFFFFF">Top</font></a></li>
-				<li><a href="#about"><font color="#FFFFFF">Project Abstract</font></a></li>
-				<li><a href="#inventory"><font color="#FFFFFF">Inventory</font></a></li>
-				<li><a href="#trajectory"><font color="#FFFFFF">Trajectory</font></a></li>
-				<li><a href="#timecross"><font color="#FFFFFF">Profile</font></a></li>
-				<li><a href="#data"><font color="#FFFFFF">Data</font></a></li>
+<?php
+  if($result == 'Japanese'){
+  echo'<li><a href="#head" class="active"><font color="#FFFFFF">トップ</font></a></li>';
+  echo'<li><a href="#about"><font color="#FFFFFF">概要</font></a></li>';
+  echo'<li><a href="#inventory"><font color="#FFFFFF">観測の詳細</font></a></li>';
+  echo'<li><a href="#trajectory"><font color="#FFFFFF">軌跡</font></a></li>';
+  echo'<li><a href="#timecross"><font color="#FFFFFF">観測結果</font></a></li>';
+  echo'<li><a href="#data"><font color="#FFFFFF">データ</font></a></li>';
+  }else{
+  echo'<li><a href="#head" class="active"><font color="#FFFFFF">Top</font></a></li>';
+  echo'<li><a href="#about"><font color="#FFFFFF">Project Abstract</font></a></li>';
+  echo'<li><a href="#inventory"><font color="#FFFFFF">Inventory</font></a></li>';
+  echo'<li><a href="#trajectory"><font color="#FFFFFF">Trajectory</font></a></li>';
+  echo'<li><a href="#timecross"><font color="#FFFFFF">Profile</font></a></li>';
+  echo'<li><a href="#data"><font color="#FFFFFF">Data</font></a></li>';
+  }
+?>
 			</ul>
 	</div>
 </nav>
@@ -76,12 +104,17 @@
 
 				<!-- Site Title, HELLO msg, etc. -->
 				<h1 class="title">Deep NINJA</h1>
-				<h2 class="subtitle">can observe the deep ocean up to 4,000 m depth automatically and globally.</h2>
-
+<?php
+  if($result == 'Japanese'){
+  echo'	<h2 class="subtitle">世界海洋を水深<b>4000m</b>まで観測可能</h2>';
+  echo'	<h3 class="tagline">JAMSTECと鶴見精機が開発した世界初の深海用フロート</h3>';
+  }else{
+  echo'	<h2 class="subtitle">can observe the deep ocean up to 4,000 m depth automatically and globally.</h2>';
+  echo'	<h3 class="tagline">It is the first deep float developed by JAMSTEC and Tsurumi-Seiki Co. Ltd.</h3>';
+  }
+?>
 				<!-- Short introductory (optional) -->
-				<h3 class="tagline">
-				It is the first deep float developed by JAMSTEC and Tsurumi-Seiki Co. Ltd.
-				</h3>
+
 				
 				<!-- Nice place to describe your site in a sentence or two -->
 				<p class="contents">&copy;Japan Agency for Marine-Earth Science and Technology (JAMSTEC) 2014</p>
@@ -95,8 +128,50 @@
 <!-- Second (Abstract) section -->
 <section class="section" id="about">
 	<div class="container">
-	
-		<h2 class="text-center title">Project Abstract</h2>
+<?php
+if($result == 'Japanese'){
+echo'
+  <h2 class="text-center title">概要</h2>
+		<div class="row">
+			<div class="col-sm-4 col-sm-offset-2">    
+				<h4 class="contents"><strong>深海用フロートによる深海観測の重要性とDeep NINJA<br></strong></h4>
+				<p class="contents">最近の研究により、人為的な気候変動、特に海洋貯熱量の増加や海面上昇に対して、海洋深層の及ぼす影響が予想よりもずっと大きいことが明らかとなってきました。しかしながら、海洋深層の観測データは非常に少なく、その理解は他の気候要素と比べても十分とはいえなえません。そのため、海洋深層の観測をさらに充実することの重要性が徐々に認識されつつあります。そこで、深海用フロートによる深海観測網（「深海アルゴ」）を2020年までに構築すべく、国際的に準備が進められています。しかし、既存のフロートでは水深2,000mを超える深層を観測できないため、深海用フロートの開発が世界各国で進められてきました。日本では海洋研究開発機構(JAMSTEC)と株式会社鶴見精機が2010年に深海用フロートの共同開発を開始し、2013年4月には世界に先駆けて「Deep NINJA」(図1)の実用化に成功しました。Deep NINJAは永年海氷域(北極海の一部)を除く世界中の海洋で水深4,000mまでの深海を観測することができます。これは、Deep NINJAにより全球海洋の体積の約9割が観測可能域になったことを意味します。図2は、Deep NINJAによる観測の様子を、通常型(アルゴ)フロートと並べて模式的に示したものです。</p>
+			</div>
+			<div class="col-sm-4">
+				<h4 class="contents"><strong>Deep NINJAによる海洋深層の観測<br></strong></h4>
+				<p class="contents">JAMSTECは株式会社鶴見精機と共同で、現在までに14台のDeep NINJA (2台のプロトタイプを含む)を主に南大洋に展開し、観測を行っています。これらによる観測はおおむね順調に行われており、2014年9月末現在までに合計で200を超えるプロファイルデータが得られています。特に、2012年12月に南極アデリー海岸沖に投入されたDeep NINJA (S/N 6)は、冬季の海氷下における深層のプロファイル観測に成功し、1年を超える長期に渡って南極海の底・深層水の水温・塩分の変化を捉えています。本ウェブサイトでは、この深海用フロートDeep NINJAを紹介する(図3と図4は投入の様子)と共に、Deep NINJAによる観測の詳細な情報(投入日や投入位置、観測周期や観測深度など)を公開します。さらに、観測点の位置(軌跡)や観測された水温・塩分プロファイルの時間変化を示した図も示します。</p>
+				</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-3 col-sm-offset-2"><div class="thumbnail"><h5><strong>図1:Deep NINJA<br></strong>(写真提供： 株式会社 鶴見精機)</h5><img src="assets/images/DeepNINJABody.jpg"></div></div>
+			<div class="col-sm-7 ">
+				<p class="contents">
+					<ul>
+						<li><font color="#FFFFFF" class="tagline"><strong>Deep NINJAの仕様</strong></font></li>
+						<li><font color="#FFFFFF"><strong>最大観測深度:</strong>4,000dbar(～4,000m)</font></li>
+						<li><font color="#FFFFFF"><strong>全長・空中重量:</strong>210cm・約50kg</font></li>
+						<li><font color="#FFFFFF"><strong>センサー:</strong>SBE製フロート用CTDセンサー（SBE41CP）搭載</font></li>
+						<li><font color="#FFFFFF"><strong>データ通信:</strong>イリジウム・ショートバーストデータ方式 (双方向通信が可能)</font></li>
+						<li><font color="#FFFFFF"><strong>測位:</strong>Global Positioning System</font></li>
+						<li><font color="#FFFFFF"><strong>運用寿命:</strong>１年以上（リチウム電池による駆動）</font></li>
+					</ul>
+				</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-3 col-sm-offset-2"><div class="thumbnail"><h5><strong>図2:Deep NINJAと通常型(アルゴ)フロートによる海洋観測の模式図</strong></h5><a href="assets/images/operation.jpg" rel="shadowbox" title=""><img src="assets/images/operation.jpg" class="wid200" /></a><strong>図をクリックで拡大</strong></div></div>
+			<div class="col-sm-3 "><div class="thumbnail"><h5><strong>図3:調査船「若鷹丸」によるDeep NINJA一号機の投入(北海道南東沖　2012年8月<br></strong>写真提供：(独)水産総合研究センター東北区水産研究所)</h5><a href="assets/images/1.jpg" rel="shadowbox" title=""><img src="assets/images/1.jpg" class="wid200" /></a><strong>図をクリックで拡大</strong></div></div>
+			<div class="col-sm-3 "><div class="thumbnail"><h5><strong>図4:海洋研究開発機構の海洋地球研究船「みらい」によるDeep NINJAの投入<br></strong>(南極アデリー海岸沖2012年12月)</h5><a href="assets/images/2.jpg" rel="shadowbox" title=""><img src="assets/images/2.jpg" class="wid200" /></a><strong>図をクリックで拡大</strong></div></div>
+		</div>
+		<div class="row">
+		</div>
+		<div class="row">
+			<div class="col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1 text-center">
+				<p class="contents">&copy;Japan Agency for Marine-Earth Science and Technology (JAMSTEC) 2014</p>
+			</div>
+		</div>
+';}else{
+echo'		<h2 class="text-center title">Project Abstract</h2>
 		<div class="row">
 			<div class="col-sm-4 col-sm-offset-2">    
 				<h4 class="contents"><strong>Importance of deep ocean observations by deep floats and Deep NINJA<br></strong></h4>
@@ -135,14 +210,21 @@
 				<p class="contents">&copy;Japan Agency for Marine-Earth Science and Technology (JAMSTEC) 2014</p>
 			</div>
 		</div>
+';}
+?>
 	</div>
 </section>
 
 <!-- Third (Inventory) section -->
 <section class="section" id="inventory">
 	<div class="container">
-	
-		<h2 class="text-center title">Inventory Data</h2>
+<?php
+  if($result == 'Japanese'){
+  echo'<h2 class="text-center title">観測の詳細</h2>';
+  }else{
+  echo'<h2 class="text-center title">Inventory Data</h2>';
+}
+?>
 		<div class="row">
 			<div class="col-sm-12 col-sm-offset-1 text-center">
 <table class="contents" border="1">
@@ -667,8 +749,13 @@
 <!-- Fourth (Trajectory) section -->
 <section class="section" id="trajectory">
 	<div class="container">
-	
-		<h2 class="text-center title">Trajectory Map</h2>
+<?php
+  if($result == 'Japanese'){
+  echo'<h2 class="text-center title">軌跡</h2>';
+  }else{
+  echo'<h2 class="text-center title">Trajectory Map</h2>';
+  }
+?>
 		<div class="row">
 			<div class="col-sm-8 col-sm-offset-2"><div class="thumbnail"><h5><strong>Deployment Map</strong></h5><img src="assets/images/map.jpg"></div>
 		</div>
@@ -807,8 +894,13 @@
 <!-- Fifth (Time-Profile) section -->
 <section class="section" id="timecross">
 	<div class="container">
-	
-		<h2 class="text-center title">Time-Depth Section</h2>
+<?php
+  if($result == 'Japanese'){
+  echo'<h2 class="text-center title">軌跡</h2>';
+  }else{
+  echo'<h2 class="text-center title">Time-Depth Section</h2>';
+  }
+?>
 		<div class="row">
 			<div class="col-sm-4 col-sm-offset-2">
 				<div class="thumbnail">
@@ -942,7 +1034,40 @@
 <!-- Sixth (Data) section -->
 <section class="section" id="data">
 	<div class="container">
-		<h2 class="text-center title">Data</h2>
+<?php
+if($result == 'Japanese'){
+echo'
+  <h2 class="text-center title">データ</h2>
+		<div class="row">
+			<div class="col-sm-8 col-sm-offset-2">    
+				<h4 class="contents"><strong>Deep NINJAで得られた科学的品質管理済みデータの公開</strong></h4>
+				<p class="contents">Deep NINJAによる観測は、日本のアルゴ計画の一部として行われている。アルゴ計画データ管理チームでは，現在2000dbar以深のデータに対する品質管理手法を議論中であり，これらに対する品質管理は施されていません（リンク：http://www.jamstec.go.jp/ARGO/argo_web/Argodata/DeepArgo.html）．そこで、JAMSTECではDeep NINJAによる観測データに科学的な品質管理を施したデータを、科学的もしくは教育的な利用に限り、提供します。この品質管理は、フロート投入直前に行われた観測船によるCTD観測結果と比較するなど、科学的な知見に基づいてJAMSTECが実施したものです。データ利用を希望する方は、下記の使用条件を確認のうえ、下記のメールアドレスまでご連絡ください。<br>
+				Deep NINJAの観測データは、国際アルゴのデータ流通スキームに従って、近いうちに世界アルゴデータ集積センター(Global Data Assembly Centre, GDAC)から公開される予定です。ただし、Deep NINJAの観測データの品質に関して、以下のような未解決の問題がいくつか残されています。<br>
+				<ol type="1"><font color="#FFFFFF">
+				<li>Deep NINJAに搭載されているCTDセンサは、現在の深海用フロートの標準モデルであるが、元々は水深2,000mより浅い海域で運用される「アルゴフロート」向けに開発されたセンサです。そのため、深海の高圧下におけるセンサ特性はよく分かっていません。</li>
+				<li>このCTDセンサで観測される水温や塩分には、圧力に依存するバイアス(系統誤差)があるのではないかと指摘されています。JAMSTECでは、Deep NINJAにより観測された塩分は圧力が高いほど低下する傾向を示すことを確認しています。</li>
+				<li>国際アルゴ計画では、2,000mよりも深層で観測されたデータの品質基準について、合意がなされていません。そのため、この深層の観測データに対する世界共通の品質管理方法は現在のところ存在しません。この問題に対してアルゴプロジェクトオフィスからの公式発表(<a href="http://www.argo.ucsd.edu/deepArgo_data.html" target="_blank"><font color="#FFF">http://www.argo.ucsd.edu/deepArgo_data.html</font></a>)がなされていますのでご参照ください（このページの日本語訳は<a href="http://www.jamstec.go.jp/ARGO/argo_web/Argodata/DeepArgo.html" target="_blank"><font color="#FFF">こちら</font></a>）</li>
+				</font></ol>
+				</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-8 col-sm-offset-2">    
+				<h4 class="contents"><strong>データの利用条件</strong></h4>
+				<p class="contents">Deep NINJAの品質管理済みデータの著作権はJAMSTECに属します。<br>
+				<ul><font color="#FFFFFF">
+			 	<li>データは、科学的または教育的な目的に限り利用することができます。</li>
+		 		<li>JAMSTECではデータが科学的に正確であるように努めていますが、その利用により生じる損害・損失・トラブル等に関して、理由のいかんに関わらず、JAMSTECは一切の責任を負いません。</li>
+	 			<li>データの改変、再配布、譲渡、または売却は禁止します。</li>
+	 			<li>データは告知することなく変更される場合があります。</li>
+				</font></ul>
+				</p>
+				<h4 class="contents"><strong>Contact:</strong>&nbsp;<img src="assets/images/add.gif" height="20"></h4>
+			</div>
+		</div>
+';}else{
+echo'
+  <h2 class="text-center title">Data</h2>
 		<div class="row">
 			<div class="col-sm-8 col-sm-offset-2">    
 				<h4 class="contents"><strong>Release of scientifically quality-controlled data of Deep NINJA observations</strong></h4>
@@ -970,6 +1095,8 @@
 				<h4 class="contents"><strong>Contact:</strong>&nbsp;<img src="assets/images/add.gif" height="20"></h4>
 			</div>
 		</div>
+';}
+?>
 	</div>
 </section>
 <!-- Load js libs only when the page is loaded. -->
